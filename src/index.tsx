@@ -1,15 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { ThemeProvider } from "@emotion/react";
+import App from "App";
+import { LazyMotion, domMax } from "framer-motion";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import reportWebVitals from "reportWebVitals";
+import GlobalStyle from "styles/GlobalStyle";
+import theme from "styles/theme";
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
+
 root.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={theme}>
+      <LazyMotion features={domMax}>
+        <GlobalStyle />
+        <App />
+      </LazyMotion>
+    </ThemeProvider>
   </React.StrictMode>
 );
 
