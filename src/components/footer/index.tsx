@@ -27,7 +27,7 @@ function Footer() {
             <span>INFO</span>
             <ul>
               <li>대표이사: 양승찬</li>
-              <li>Copyright © 2022 rerave. All Rights Reserved.</li>
+              <li>사업자 등록번호 : 853-87-00953</li>
               <li>통신판매업신고 : 제2021-서울구로-2322호</li>
               <li>(주) 스타스테크 서울특별시 구로구 디지털로</li>
               <li>30길 28 마리오타워 1203호 스타스테크</li>
@@ -87,6 +87,7 @@ const footerInfoBox = css`
   ul {
     li {
       line-height: 1.125rem;
+      list-style: none;
     }
   }
 `;
