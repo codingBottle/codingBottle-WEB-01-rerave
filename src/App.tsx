@@ -1,10 +1,12 @@
 import Nav from "components/nav";
+import Footer from "components/footer";
 
 function App() {
   return (
     <>
       <Nav />
-      <main></main>;
+      <main></main>
+      <Footer />
     </>
   );
 }
