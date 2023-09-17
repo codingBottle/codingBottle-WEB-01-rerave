@@ -61,6 +61,7 @@ const wrapper = css`
   padding: 5.625rem 0 2.5rem 0;
   background-color: ${theme.color.white};
 `;
+
 const contents = css`
   display: flex;
   flex-direction: row;
@@ -71,11 +72,13 @@ const contents = css`
   min-width: 60rem;
   margin: 0 3.125rem 0 3.125rem;
 `;
+
 const footerInfo = css`
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 `;
+
 const footerInfoBox = css`
   display: flex;
   flex-direction: column;
@@ -91,11 +94,13 @@ const footerInfoBox = css`
     }
   }
 `;
+
 const siteMap = css`
   li {
     cursor: pointer;
   }
 `;
+
 const copyright = css`
   position: absolute;
   left: 0;
