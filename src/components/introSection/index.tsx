@@ -17,7 +17,7 @@ function IntroSection() {
         <span css={contentSummary}>
           푸른 바다와 깊이 있는 연구가 만나 만드는 경이로운 가치
         </span>
-        <div>
+        <div css={viewMoreWrapper}>
           <ViewMore />
         </div>
       </div>
@@ -59,4 +59,11 @@ const contentSummary = css`
   margin-bottom: 2.5rem;
   font-family: "Noto Sans KR", sans-serif;
   letter-spacing: -0.6px;
+`;
+
+const viewMoreWrapper = css`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
