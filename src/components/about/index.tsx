@@ -2,9 +2,9 @@
 
 import { css } from "@emotion/react";
 import theme from "styles/theme";
-import backgroundImg from "../../assets/images/about/about_bg.jpg";
-import aboutImg1 from "../../assets/images/about/about_pic1.jpg";
-import aboutImg2 from "../../assets/images/about/about_pic2.jpg";
+import backgroundImg from "assets/images/about/about_bg.jpg";
+import aboutImg1 from "assets/images/about/about_pic1.jpg";
+import aboutImg2 from "assets/images/about/about_pic2.jpg";
 import ViewMore from "components/button/ViewMore";
 
 function About() {
@@ -12,8 +12,8 @@ function About() {
     <section css={wrapper}>
       <div css={contentWrapper}>
         <div css={imgWrapper}>
-          <img src={aboutImg1} />
-          <img src={aboutImg2} />
+          <img src={aboutImg1} alt="aboutImg1" />
+          <img src={aboutImg2} alt="aboutImg2" />
         </div>
         <div css={descWrapper}>
           <span css={subTitle}>Brand Story</span>
