@@ -2,7 +2,7 @@
 
 import { css } from "@emotion/react";
 import theme from "styles/theme";
-import backgroundImg from "assets/images/about/about_bg.jpg";
+import aboutBackGroundImg from "assets/images/about/about_bg.jpg";
 import aboutImg1 from "assets/images/about/about_pic1.jpg";
 import aboutImg2 from "assets/images/about/about_pic2.jpg";
 import ViewMore from "components/button/ViewMore";
@@ -37,10 +37,8 @@ const wrapper = css`
   justify-content: center;
   align-items: center;
   padding: 12rem 0;
-  background-image: url(${backgroundImg});
-  background-repeat: no-repeat;
+  background: url(${aboutBackGroundImg}) no-repeat center center;
   background-size: cover;
-  background-position: center;
   overflow: hidden;
 `;
 
@@ -73,6 +71,7 @@ const descWrapper = css`
   align-items: center;
   width: 45%;
   text-align: center;
+
 `;
 
 const subTitle = css`
@@ -94,10 +93,10 @@ const detail = css`
   flex-direction: column;
   align-items: center;
   line-height: 1.625rem;
-  margin-bottom: 2.8125rem;
   font-size: 1rem;
   p {
     margin: 0;
     padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
   }
 `;
