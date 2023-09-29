@@ -1,10 +1,14 @@
 /** @jsxImportSource @emotion/react */
 
 import { css } from "@emotion/react";
+import theme from "styles/theme";
 import ProductInform from "components/text/ProductInform";
 
 interface Props {
-  hashtag: string;
+  hashtag: {
+    text: string;
+    style?: React.CSSProperties;
+  };
   title: string;
   koreanTitle: string;
   summary: string;
@@ -20,10 +24,18 @@ function AboutProduct({
   summaryBr,
   imgSrc,
 }: Props) {
+  
+  const hashFontKor = {
+    fontFamily: theme.fontFamily.kor,
+  };
+
   return (
     <section css={wrapper}>
       <ProductInform
-        hashtag={hashtag}
+        hashtag={{
+          text: `${hashtag.text}`,
+          style: hashFontKor,
+        }}
         title={title}
         koreanTitle={koreanTitle}
         summary={summary}

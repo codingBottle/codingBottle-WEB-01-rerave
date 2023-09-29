@@ -5,9 +5,29 @@ import theme from "styles/theme";
 import aboutBackGroundImg from "assets/images/about/about_bg.jpg";
 import aboutImg1 from "assets/images/about/about_pic1.jpg";
 import aboutImg2 from "assets/images/about/about_pic2.jpg";
-import ViewMore from "components/button/ViewMore";
+import ProductInform from "components/text/ProductInform";
 
-function About() {
+interface Props {
+  hashtag: {
+    text: string;
+    style?: React.CSSProperties;
+  };
+  title: string;
+  summary: string;
+  summaryBr?: string;
+}
+
+function About({
+  hashtag,
+  title,
+  summary,
+  summaryBr,
+}: Props) {
+  
+  const hashFontEn = {
+    fontFamily: theme.fontFamily.en,
+  };
+
   return (
     <section css={wrapper}>
       <div css={contentWrapper}>
@@ -16,13 +36,15 @@ function About() {
           <img src={aboutImg2} alt="aboutImg2" />
         </div>
         <div css={descWrapper}>
-          <span css={subTitle}>Brand Story</span>
-          <h1 css={title}>About Rerave</h1>
-          <div css={detail}>
-            <p>리라브는 나를, 우리를 그리고 더 나아가 세상을</p>
-            <p>모두 건강하고 아름답게 하기 위한 고민에서 시작하였습니다.</p>
-          </div>
-          <ViewMore />
+          <ProductInform 
+            hashtag={{
+              text: `${hashtag.text}`,
+              style: hashFontEn,
+            }}
+            title={title}
+            summary={summary}
+            summaryBr={summaryBr}
+          />
         </div>
       </div>
     </section>
@@ -71,32 +93,4 @@ const descWrapper = css`
   align-items: center;
   width: 45%;
   text-align: center;
-
-`;
-
-const subTitle = css`
-  margin-bottom: 1.25rem;
-  font-size: 0.9375rem;
-  line-height: 1.5rem;
-  color: ${theme.color.gray};
-`;
-
-const title = css`
-  margin-bottom: 1.5625rem;
-  font-size: 3.75rem;
-  line-height: 4.3125rem;
-  font-weight: ${theme.fontWeight.normal};
-`;
-
-const detail = css`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  line-height: 1.625rem;
-  font-size: 1rem;
-  p {
-    margin: 0;
-    padding: 0;
-    font-family: 'Noto Sans KR', sans-serif;
-  }
 `;
