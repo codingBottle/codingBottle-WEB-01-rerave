@@ -17,7 +17,7 @@ interface Props {
   summaryBr?: string;
 }
 
-function About({
+function AboutBrand({
   hashtag,
   title,
   summary,
@@ -51,7 +51,7 @@ function About({
   )
 }
 
-export default About;
+export default AboutBrand;
 
 const wrapper = css`
   display: flex;
