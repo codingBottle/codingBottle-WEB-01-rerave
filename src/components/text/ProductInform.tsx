@@ -53,7 +53,7 @@ const hashtagContent = css`
 const titleContent = css`
   margin-bottom: 1.5rem;
   font-size: 3.75rem;
-  line-height: 4.3rem;
+  line-height: 4.3125rem;
   letter-spacing: -0.02em;
 `;
 
@@ -68,7 +68,8 @@ const koreanTitleContent = css`
 
 const summaryContent = css`
   font-size: 1rem;
-  line-height: 1.6rem;
-  letter-spacing: -0.04rem;
   font-family: ${theme.fontFamily.kor};
+  line-height: 1.625rem;
+  letter-spacing: -0.04em;
+  word-break: keep-all;
 `;
