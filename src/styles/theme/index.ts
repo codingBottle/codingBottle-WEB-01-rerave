@@ -9,6 +9,10 @@ const theme = {
     normal: 500,
     bold: 700,
   },
+  fontFamily: {
+    en: "Marcellus",
+    kor: 'Noto Sans KR',
+  },
 };
 
 export default theme;

@@ -14,7 +14,7 @@ const globalStyle = (theme: Theme) => css`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Marcellus", serif;
+    font-family: ${theme.fontFamily.en};
   }
 
   html,
