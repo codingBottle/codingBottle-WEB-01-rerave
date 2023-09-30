@@ -5,8 +5,7 @@ import { css } from "@emotion/react";
 function ViewMore() {
   return (
     <a href="/" css={wrapper}>
-      <span>View more</span>
-      <hr css={hrCss} />
+      <span css={viewMoreBtn}>View more</span>
     </a>
   );
 }
@@ -19,8 +18,8 @@ const wrapper = css`
   margin-top: 3rem;
   cursor: pointer;
 `;
-
-const hrCss = css`
-  margin-top: 0.1rem;
-  width: 6.5rem;
+const viewMoreBtn = css`
+  display: inline-block;
+  border-bottom: 0.0625rem solid;
+  padding-bottom: 0.2rem;
 `;

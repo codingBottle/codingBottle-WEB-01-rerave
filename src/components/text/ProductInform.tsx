@@ -2,11 +2,15 @@
 
 import { css } from "@emotion/react";
 import ViewMore from "components/button/ViewMore";
+import theme from "styles/theme";
 
 interface Props {
-  hashtag: string;
+  hashtag: {
+    text: string;
+    style?: React.CSSProperties;
+  };
   title: string;
-  koreanTitle: string;
+  koreanTitle?: string;
   summary: string;
   summaryBr?: string;
 }
@@ -20,9 +24,9 @@ function ProductInform({
 }: Props) {
   return (
     <div css={wrapper}>
-      <span css={hashtagContent}>{hashtag}</span>
+      <span css={hashtagContent} style={hashtag.style}>{hashtag.text}</span>
       <span css={titleContent}>{title}</span>
-      <span css={koreanTitleContent}>{koreanTitle}</span>
+      {koreanTitle && <span css={koreanTitleContent}>{koreanTitle}</span>}
       <p css={summaryContent}>
         {summary} <br /> {summaryBr}
       </p>
@@ -43,13 +47,13 @@ const hashtagContent = css`
   font-size: 0.93rem;
   line-height: 1.5rem;
   color: #999;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: ${theme.fontFamily.kor};
 `;
 
 const titleContent = css`
   margin-bottom: 1.5rem;
   font-size: 3.75rem;
-  line-height: 4.3rem;
+  line-height: 4.3125rem;
   letter-spacing: -0.02em;
 `;
 
@@ -59,12 +63,13 @@ const koreanTitleContent = css`
   line-height: 2rem;
   letter-spacing: -0.04rem;
   margin-bottom: 3rem;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: ${theme.fontFamily.kor};
 `;
 
 const summaryContent = css`
   font-size: 1rem;
-  line-height: 1.6rem;
-  letter-spacing: -0.04rem;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: ${theme.fontFamily.kor};
+  line-height: 1.625rem;
+  letter-spacing: -0.04em;
+  word-break: keep-all;
 `;
