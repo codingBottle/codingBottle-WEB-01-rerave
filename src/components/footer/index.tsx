@@ -56,7 +56,7 @@ const wrapper = css`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 16.5rem;
   padding: 5.625rem 0 2.5rem 0;
   background-color: ${theme.color.white};
