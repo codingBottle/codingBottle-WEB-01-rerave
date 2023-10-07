@@ -6,6 +6,7 @@ import Footer from "components/footer";
 import IntroSection from "components/introSection";
 import AboutProduct from "components/section/AboutProduct";
 import AboutBrand from "components/section/AboutBrand";
+import AboutTechnology from "components/section/AboutTechnology";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         summary="리라브는 나를, 우리를 그리고 더 나아가 세상을"
         summaryBr="모두 건강하고 아름답게 하기 위한 고민에서 시작하였습니다."
       />
+      <AboutTechnology />
       <Footer />
     </>
   );
