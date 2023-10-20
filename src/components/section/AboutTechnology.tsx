@@ -33,7 +33,6 @@ const wrapper = css`
 `;
 
 const contentWrapper = css`
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
