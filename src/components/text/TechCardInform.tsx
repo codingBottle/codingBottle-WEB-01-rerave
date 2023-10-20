@@ -31,7 +31,7 @@ const wrapper = css`
 
 const cardWrapper = css`
   position: relative;
-  width: calc(33.33% - 10px);
+  width: calc(33.33% - .625rem);
   height: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -47,7 +47,7 @@ const cardWrapper = css`
   &:hover {
     filter: grayscale(0) opacity(100%);
     img {
-      border-radius: 40px;
+      border-radius: 2.5rem;
     }
   }
 `;
