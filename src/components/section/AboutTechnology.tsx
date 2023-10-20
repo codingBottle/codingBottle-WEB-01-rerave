@@ -2,6 +2,7 @@
 
 import { css } from "@emotion/react";
 import theme from "styles/theme";
+import TechnologyInform from "components/text/TechCardInform";
 
 function AboutTechnology() {
   return (
@@ -14,11 +15,7 @@ function AboutTechnology() {
             모두 건강하고 아름답게 하기 위한 고민에서 시작하였습니다.
           </p>
         </div>
-        <div css={cardWrapper}>
-          <div>Card Compo1</div>
-          <div>Card Compo2</div>
-          <div>Card Compo3</div>
-        </div>
+        <TechnologyInform />
       </div>
     </section>
   );
@@ -69,17 +66,4 @@ const desc = css`
   line-height: 1.625rem;
   letter-spacing: -0.0625rem;
   word-break: keep-all;
-`;
-
-const cardWrapper = css`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-
-  div {
-    border: 1px solid green;
-    position: relative;
-    width: calc(33.33% - 10px);
-  }
 `;
