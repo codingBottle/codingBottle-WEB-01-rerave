@@ -1,13 +1,18 @@
-/** @jsxImportSource @emotion/react */
-
 import { css } from "@emotion/react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import liftingMask from "assets/images/product/liftingMask.jpeg";
 import Footer from "components/footer";
 import IntroSection from "components/introSection";
-import AboutProduct from "components/section/AboutProduct";
 import AboutBrand from "components/section/AboutBrand";
+import AboutProduct from "components/section/AboutProduct";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  });
+
   return (
     <>
       {/* <Nav /> */}
@@ -15,7 +20,7 @@ function App() {
       <main css={wrapper}>
         <AboutProduct
           hashtag={{
-            text: "#불가사리 마스크 #재생 #회복"
+            text: "#불가사리 마스크 #재생 #회복",
           }}
           title="Rerave PENELLAGEN®Lifting Mask"
           koreanTitle="리라브 페넬라겐® 리프팅 마스크"
@@ -26,7 +31,7 @@ function App() {
       </main>
       <AboutBrand
         hashtag={{
-          text: 'Brand Story'
+          text: "Brand Story",
         }}
         title="About Rerave"
         summary="리라브는 나를, 우리를 그리고 더 나아가 세상을"
