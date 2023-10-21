@@ -1,8 +1,8 @@
 /** @jsxImportSource @emotion/react */
 
 import { css } from "@emotion/react";
-import theme from "styles/theme";
 import ProductInform from "components/text/ProductInform";
+import theme from "styles/theme";
 
 interface Props {
   hashtag: {
@@ -41,7 +41,7 @@ function AboutProduct({
         summary={summary}
         summaryBr={summaryBr}
       />
-      <div css={imgWrapper}>
+      <div css={imgWrapper} data-aos="fade-up">
         <img src={imgSrc} alt="상품이미지" css={imgInWrapper} />
       </div>
     </section>

@@ -1,3 +1,5 @@
+/** @jsxImportSource @emotion/react */
+
 import { css } from "@emotion/react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -10,7 +12,9 @@ import { useEffect } from "react";
 
 function App() {
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      duration: 1000,
+    });
   });
 
   return (
