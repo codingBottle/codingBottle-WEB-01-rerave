@@ -1,6 +1,6 @@
-import panellagen from "../assets/images/technology/tech_penellagen.jpg";
-import sheet from "../assets/images/technology/tech_sheet.jpg";
-import ingredient from "../assets/images/technology/tech_ingredient.jpg";
+import panellagen from "assets/images/technology/tech_penellagen.jpg";
+import sheet from "assets/images/technology/tech_sheet.jpg";
+import ingredient from "assets/images/technology/tech_ingredient.jpg";
 
 export const techArr = [
   {
