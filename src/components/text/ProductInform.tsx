@@ -23,8 +23,10 @@ function ProductInform({
   summaryBr,
 }: Props) {
   return (
-    <div css={wrapper}>
-      <span css={hashtagContent} style={hashtag.style}>{hashtag.text}</span>
+    <div css={wrapper} data-aos="fade-up">
+      <span css={hashtagContent} style={hashtag.style}>
+        {hashtag.text}
+      </span>
       <span css={titleContent}>{title}</span>
       {koreanTitle && <span css={koreanTitleContent}>{koreanTitle}</span>}
       <p css={summaryContent}>
